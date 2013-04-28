@@ -24,6 +24,10 @@ module Rapns
     scope :for_apps, lambda { |apps|
       where(:app_id => apps.map(&:id))
     }
+    
+    def alert
+      "asdf"
+    end
 
     def initialize(*args)
       attributes = args.first
